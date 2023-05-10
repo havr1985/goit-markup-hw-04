@@ -1,0 +1,314 @@
+:root{
+    --body-text-color:#434455;
+    --header-text-color:#2E2F42;
+    --primary-brend-color:#4D5AE5;
+    --pressed-state-color:#404BBF;
+    --primary-color-white:#ffffff;
+    --light-mode-color: #F4F4FD;
+    --accent-color: #E7E9FC;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+
+body{
+    background-color:var(--primary-color-white);
+    color:var(--body-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+/*Header*/
+.main{
+    border-bottom: 1px solid var(--accent-color);
+}
+.container{
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo{
+    margin-right: 76px;
+    color:var(--primary-brend-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 40px;
+}
+
+.logoelement{
+    color: var(--header-text-color);
+}
+.site-nav{
+    display: flex;
+    
+}
+.site-nav .link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--header-text-color);
+    font-weight: 500;
+
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--pressed-state-color);
+}
+.kontakts{
+    font-style: normal;
+    display: flex;
+    margin-left: auto;
+}
+.kontakts-list .link{
+    display: block;
+    color:var(--body-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.kontakts-list .link:hover,
+.kontakts-list .link:focus{
+     color: var(--pressed-state-color);
+}
+.kontakts-list {
+    display: flex;
+}
+.kontakts-list .item:not(:last-child){
+    margin-right: 40px;
+}
+/*Hero*/
+.hero{
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-color:var(--header-text-color);
+    text-align: center;
+}
+.hero-title{
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--primary-color-white);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+
+}
+.hero-btn{
+    display: block;
+    border: none;
+    min-width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    padding: 16px 42px;
+    border-radius: 4px;
+
+    background-color: var(--primary-brend-color);
+    color: var(--primary-color-white);
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+.hero-btn:hover,
+.hero-btn:focus{
+    background-color: var(--pressed-state-color);
+}
+/*Sections*/
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-work{
+    padding-bottom: 120px;
+}
+.section-title{
+    margin-bottom: 72px;
+    color:var(--header-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.advantage{
+    display: flex;
+}
+.advantage .item:not(:last-child){
+    margin-right: 24px;
+}
+.advantage > .item{
+    flex-basis: calc((100% - 72px) / 4);
+}
+.advantage-title{
+    margin-bottom: 8px;
+    
+}
+.advantage-title,
+.team-title,
+.project-title{
+    color:var(--header-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.works{
+    display: flex;
+    margin-top: 72px;
+}
+.works > .item:not(:last-child){
+    margin-right: 24px;
+}
+.team{
+    display: flex;
+}
+.team-title{
+    margin-bottom: 8px;
+}
+.team-text{
+    font-size: 16px;
+}
+
+.team-list{
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-color-white);
+    text-align: center;
+}
+.team .team-list:not(:last-child){
+    margin-right: 24px;
+}
+.card-info{
+    padding: 32px 16px;
+}
+.teambg{
+    background-color: var(--light-mode-color);
+}
+
+/*Footer*/
+.bottow{
+    background-color: var(--header-text-color);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.bottow-text{
+    width: 264px;
+    color:var(--light-mode-color) ;
+}
+.logo-bottow{
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--primary-brend-color);
+    font-family: Raleway, sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.logo-el-footer{
+    color: var(--light-mode-color);
+}
+/*Portfolio page*/
+.gallery{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.filter-btn{
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--light-mode-color);
+    color: var(--primary-brend-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus{
+    background-color: var(--pressed-state-color);
+    color: var(--primary-color-white);
+    border: 1px solid transparent;
+}
+.filter .item:not(:last-child){
+    margin-right: 24px;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects > .item:not(:nth-child(3n + 3)){
+    margin-right: 24px;
+}
+.projects > .item:not(:nth-last-child(-n + 3)){
+    margin-bottom: 48px;
+}
+.projects > .item{
+    width: calc((100% - 48px) / 3);
+}
+.projects > .link{
+    display: block;
+}
+.card-content{
+    padding: 32px 16px;
+    border: 1px solid var(--accent-color);
+    border-top: none;
+}
+.project-title{
+    margin-bottom: 8px;
+}
+.projects .link{
+    
+    color: inherit;
+}
