@@ -119,6 +119,14 @@ body{
     background-color:var(--header-text-color);
     text-align: center;
 }
+.overlay{
+    max-width: 1440px;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+    url("../images/people-office.jpg");
+}
 .hero-title{
     max-width: 496px;
     margin-left: auto;
@@ -153,15 +161,14 @@ body{
 .hero-btn:hover,
 .hero-btn:focus{
     background-color: var(--pressed-state-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/*Sections*/
-.section{
+/*Sections Advantage*/
+.section-advantage{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.section-work{
-    padding-bottom: 120px;
-}
+
 .section-title{
     margin-bottom: 72px;
     color:var(--header-text-color);
@@ -172,18 +179,26 @@ body{
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
-.advantage{
+.advantage-list{
     display: flex;
 }
-.advantage .item:not(:last-child){
+.advantage-list .advantage-item:not(:last-child){
     margin-right: 24px;
 }
-.advantage > .item{
+.advantage-list > .advantage-item{
     flex-basis: calc((100% - 72px) / 4);
 }
 .advantage-title{
     margin-bottom: 8px;
+    margin-top: 8px;
     
+}
+.advantage-list .advantage-item::before{
+    display: block;
+    content: "";
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--light-mode-color);
 }
 .advantage-title,
 .team-title,
@@ -194,14 +209,25 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
-.works{
+/*Section Works*/
+
+.section-works {
+    padding-bottom: 120px;
+}
+.works-list{
     display: flex;
     margin-top: 72px;
 }
-.works > .item:not(:last-child){
+.works-list > .works-item:not(:last-child){
     margin-right: 24px;
 }
-.team{
+/*Section Team*/
+
+.section-team{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-list{
     display: flex;
 }
 .team-title{
@@ -211,32 +237,43 @@ body{
     font-size: 16px;
 }
 
-.team-list{
+.team-item{
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-color-white);
     text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px 
+     rgba(46, 47, 66, 0.16), 0px 2px 1px
+     rgba(46, 47, 66, 0.08);
 }
-.team .team-list:not(:last-child){
+.team-list .team-item:not(:last-child){
     margin-right: 24px;
 }
 .card-info{
     padding: 32px 16px;
 }
-.teambg{
+.team-bg{
     background-color: var(--light-mode-color);
 }
+     /*Section Customers*/
 
-/*Footer*/
-.bottow{
+.section-customers{
+    padding-top: 120px;
+}
+.customers-list{
+    display: flex;
+}    
+
+           /*Footer*/
+.bottom{
     background-color: var(--header-text-color);
     padding-bottom: 100px;
     padding-top: 100px;
 }
-.bottow-text{
+.bottom-text{
     width: 264px;
     color:var(--light-mode-color) ;
 }
-.logo-bottow{
+.logo-bottom{
     display: inline-block;
     margin-bottom: 16px;
     color: var(--primary-brend-color);
@@ -251,7 +288,9 @@ body{
 .logo-el-footer{
     color: var(--light-mode-color);
 }
-/*Portfolio page*/
+
+         /*Portfolio page*/
+
 .gallery{
     padding-top: 96px;
     padding-bottom: 120px;
@@ -276,10 +315,12 @@ body{
     cursor: pointer;
 }
 .filter-btn:hover,
-.filter-btn:focus{
+.filter-btn:focus,
+.filter-btn:active{
     background-color: var(--pressed-state-color);
     color: var(--primary-color-white);
     border: 1px solid transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter .item:not(:last-child){
     margin-right: 24px;
@@ -288,16 +329,16 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.projects > .item:not(:nth-child(3n + 3)){
+.projects > .projects-item:not(:nth-child(3n + 3)){
     margin-right: 24px;
 }
-.projects > .item:not(:nth-last-child(-n + 3)){
+.projects > .projects-item:not(:nth-last-child(-n + 3)){
     margin-bottom: 48px;
 }
-.projects > .item{
+.projects > .projects-item{
     width: calc((100% - 48px) / 3);
 }
-.projects > .link{
+.projects > .projects-link{
     display: block;
 }
 .card-content{
@@ -308,7 +349,11 @@ body{
 .project-title{
     margin-bottom: 8px;
 }
-.projects .link{
+.projects .projects-link{
     
     color: inherit;
+}
+.projects-item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border: 1px solid #F4F4FD;
 }
