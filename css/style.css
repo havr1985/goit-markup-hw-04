@@ -260,9 +260,7 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 8px;
-}
-.social-icons .social-item:not(:last-child){
-    margin-right: 24px;
+    gap: 24px;
 }
 .team-icon{
     display: flex;
@@ -291,11 +289,9 @@ body{
 }
 .customers-list{
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
-.customers-list .customers-item:not(:last-child){
-    margin-right: 24px;
-}
+
 .customers-link{
     display: flex;
     width: 168px;
@@ -362,13 +358,10 @@ body{
 }
 .social-bottom-list{
     display: flex;
-    justify-content: space-between;
-}
-.social-bottom-list .social-bottom-item:not(:last-child){
-    margin-right: 16px;
+    gap: 16px;
 }
 .social-bottom-link{
-    display: block;
+    display: flex;
     width: 40px;
     height: 40px;
     border-radius: 50%;
